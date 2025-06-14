@@ -4,13 +4,35 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  border: 1px solid #ccc; /* overall page border */
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
 /* Header and footer */
 header, footer {
   border: 1px solid #ccc;
   padding: 10px;
+  background-color: #eaeaea;
+}
+
+/* Header logo and nav */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+header li {
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #007BFF;
 }
 
 /* Main is a horizontal flex container */
@@ -21,19 +43,31 @@ main {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
 }
 
 /* Article takes 2/3 of space */
 article {
   flex: 2;
   border-right: 1px solid #ccc;
-  padding: 10px;
+  padding: 15px;
   overflow-y: auto;
+  background-color: #ffffff;
+  border-left: 4px solid #007BFF;
 }
 
 /* Aside takes 1/3 of space */
 aside {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
   overflow-y: auto;
+  background-color: #f0f0f0;
+  border-left: 4px solid #28a745;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
 }
